@@ -1,6 +1,7 @@
 package Arrays_java;
 //import Arrays_java.array_basic;
 public class Kadanes_algo {
+    // find the maximum sum of subarray in array using kadane's algorithm.
     static int subArray(int arr[], int n)
     {
         // initializing currSum to 0 and maxsum to min_val, denoting an empty subarray.
@@ -18,12 +19,14 @@ public class Kadanes_algo {
         }
     return maxSum;
     }
+    // Driver program.
     public static void main(String[] args) {
         int arr[] = {-1,-2,-2,5,-7,-3,-1};
         printArray(arr,7);
         // maximum sum of subArray in array.
         System.out.println("Maximum sum in the sub-array of array is: "+subArray(arr,7));
     }
+    // This function helps us to print the array.
     static void printArray(int arr[], int n)
     {
         for(int i=0;i<n;i++)
